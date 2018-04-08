@@ -1,0 +1,50 @@
+<div class="userform">
+    <form action="/user/info" method="POST" class="userinfo">
+
+        <div class="Names">
+            <label for="firstName">FirstName</label>
+            <input type="text" name="firstName" value="{{user.firstName}}" id="userinfo__firstName">
+            <label for="lastName">LastName</label>
+            <input type="text" name="lastName" value="{{user.lastName}}" id="userinfo__lastName">
+
+        </div>
+        <div class="form__college">
+            <label for="College">College</label>
+            <select name="College">
+                <option value="IMSEC">IMSEC</option>
+                <option value="AKGEC">AKGEC</option>
+                <option value="KIET">KIET</option>
+            </select>
+        </div>
+        <div class="form__course">
+            <label for="Course">Course</label>
+            <select name="Course">
+                <option value="BTECH">BTECH</option>
+
+            </select>
+        </div>
+        <div class="form__year">
+            <label for="Year">Year</label>
+            <select name="Year">
+                <option value="1st Year">1st</option>
+                <option value="2nd Year">2nd</option>
+                <option value="3rd Year">3rd</option>
+                <option value="4th Year">4th</option>
+            </select>
+        </div>
+
+        <div class="form__branch">
+            <label for="Branch">Branch</label>
+            <select name="Branch">
+                <option value="IT">IT</option>
+                <option value="CS">CS</option>
+                <option value="ME">ME</option>
+                <option value="EN">EN</option>
+                <option value="EC">EC</option>
+                <option value="CI">Civil</option>
+            </select>
+        </div>
+        <input type="submit" value="submit" class="btn">
+
+    </form>
+</div>

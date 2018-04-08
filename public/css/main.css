@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+body {
+  font-size: 62.7%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.welcome {
+  text-align: center;
+  background: #ddd;
+  width: 30rem;
+  min-height: 25rem;
+  margin: 10rem auto;
+  border-radius: 2rem;
+  padding-top: 2rem;
+  box-shadow: 1rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.welcome .welcome__message {
+  font-size: 2rem;
+  margin: 3rem 0;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+.btn--google {
+  background-color: #db3236;
+  color: white;
+}
+.header {
+  height: 5rem;
+  background: #3b5998;
+}
+
+.header__brandname {
+  float: left;
+  color: #ddd;
+  font-size: 2rem;
+}
+
+.header__public {
+  float: right;
+  text-decoration: none;
+  color: #ddd;
+}
+
+.header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[input="text"],
+label,
+select {
+  display: block;
+}
+
+.userform {
+  background: #ddd;
+  width: 40rem;
+  height: 30rem;
+  margin: 5rem auto;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.userinfo {
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  padding: 1rem 1rem;
+}
