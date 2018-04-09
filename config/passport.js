@@ -6,7 +6,7 @@ const User = require("../models/users");
 passport.use(
   new Strategy(
     {
-      clientID: keys.googleClientId,
+      clientID: keys.googleClientID,
       clientSecret: keys.googleClientSecret,
       callbackURL: "/auth/google/redirect"
     },
