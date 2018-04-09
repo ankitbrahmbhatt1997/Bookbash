@@ -1,0 +1,13 @@
+{{#each Adds}}
+<div class="showAdd">
+    <h1 class="showAdd__title">
+        {{title}}
+    </h1>
+    <h2 class="showAdd__price">{{price}}</h2>
+    <p class="showAdd__details">{{details}}</p>
+    <h3 class="showAdd__user">{{user.firstName}} {{user.lastName}}</h3>
+    <h2>{{date}}</h2>
+</div>
+{{else}}
+<h2>No adds Found</h2>
+{{/each}}

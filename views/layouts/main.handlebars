@@ -18,7 +18,10 @@
             <h1 class="header__brandname">
                 BookBash
             </h1>
-            <a href="Adds/All" class="header__public btn">All Adds</a>
+            <a href="/Adds/all" class="header__public btn">All Adds</a>
+            {{#if user}}
+            <a href="/user/logout" class="header__logout btn">Logout</a>
+            {{else}} {{/if}}
         </div>
 
     </header>

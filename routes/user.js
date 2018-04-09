@@ -10,7 +10,7 @@ router.get("/info", ensureAuthenticated, (req, res) => {
 });
 
 //Add user Info to the databse
-router.post("/info", ensureAuthenticated, (req, res) => {
+router.post("/info", (req, res) => {
   let body = {
     firstName: req.body.firstName,
     lastName: req.body.lastName,
@@ -28,8 +28,17 @@ router.post("/info", ensureAuthenticated, (req, res) => {
     if (!user) {
       res.status(400).send("Unable to save the data");
     }
-    console.log(user);
+    res.redirect("/user/profile");
   });
 });
 
+//Show users dashboard
+router.get("/profile", ensureAuthenticated, (req, res) => {
+  res.render("user/profile");
+});
+
+router.get("/logout", (req, res) => {
+  req.logout();
+  res.redirect("/");
+});
 module.exports = router;

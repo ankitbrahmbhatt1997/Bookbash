@@ -11,6 +11,7 @@ const methodOverride = require("method-override");
 const index = require("./routes/index");
 const auth = require("./routes/auth");
 const user = require("./routes/user");
+const adds = require("./routes/adds");
 
 let port = 3000;
 const app = express();
@@ -55,6 +56,7 @@ app.use((req, res, next) => {
 app.use("/", index);
 app.use("/auth", auth);
 app.use("/user", user);
+app.use("/adds", adds);
 
 app.listen(port, () => {
   console.log(`connected at port ${port}`);
