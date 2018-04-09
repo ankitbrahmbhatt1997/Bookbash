@@ -9,7 +9,6 @@ router.get(
 
 router.get("/google/redirect", passport.authenticate("google"), (req, res) => {
   if (req.user.count) {
-    console.log("Yes");
     res.redirect("/user/profile");
   } else {
     res.redirect("/user/info");
