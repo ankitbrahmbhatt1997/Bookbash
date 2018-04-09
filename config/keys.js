@@ -4,6 +4,6 @@
 // module.exports = require("./keys_dev");
 module.exports = {
   googleClientID:
-    "351522286223-sn0ieh5uun3dtt7ancg2n2qrb51vs21m.apps.googleusercontent.com",
-  googleClientSecret: "6Bt6XvW_Yb5qFboCoGBIWEFb"
+    "404326468874-be861td2kag382ck0l7bmp7dvdb34uio.apps.googleusercontent.com",
+  googleClientSecret: "nVsFRg03tPasM4OI-6S4uXxt"
 };

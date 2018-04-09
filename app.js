@@ -13,7 +13,7 @@ const auth = require("./routes/auth");
 const user = require("./routes/user");
 const adds = require("./routes/adds");
 
-let port = process.env.PORT || 3000;
+let port = process.env.PORT || 5000;
 const app = express();
 
 app.engine(
