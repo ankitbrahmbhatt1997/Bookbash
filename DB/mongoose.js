@@ -5,11 +5,11 @@ mongoose.Promise = global.Promise;
 var connectPath, options;
 //Check if we are on Heroku
 if (process.env.PORT) {
-  connectPath = "mongodb://Ankit6564@ds121999.mlab.com:21999/node_todo_api";
+  connectPath = "mongodb://ankitbookbash>@ds241039.mlab.com:41039/bookbash";
   options = {
     auth: {
-      user: "Ankit6564",
-      password: "gokuwillbeatjiren"
+      user: "ankitbookbash",
+      password: "ankitbookbash123"
     }
   };
 } else {
